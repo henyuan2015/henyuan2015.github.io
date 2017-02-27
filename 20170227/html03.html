@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏式布局</title>
+    <style>
+    *{margin: 0;padding: 0;}
+    body{padding: 30px;}
+    .main{position: relative; min-width: 600px; padding: 20px;background-color: #eee;border: 1px solid #999;box-sizing: border-box;}
+    .left{float: left;margin-left: -100%; padding: 15px; position: relative; width: 200px;background-color: #fff;border: 1px solid #999;box-sizing: border-box;}
+    .left>img{width: 80px;height: 80px;background-color: #999;color: #fff;}
+    .left>span{position: absolute;left: 100px;}
+    .right{float: left;margin-left: -120px; width: 120px;background-color: #fff;border: 1px solid #999;box-sizing: border-box;text-align: center;}
+    .right>img{width: 80px;height: 80px;background-color: #999;color: #fff;margin-top: 10px;margin-bottom: 10px;}
+    .clear{clear: both;}
+    .content{width: 100%;float: left;}
+    .content>.detail{margin-left: 240px;margin-right: 160px;padding: 15px;background-color: #fff;border: 1px solid #999;box-sizing: border-box;}
+    .detail>p{text-indent: 2em;line-height: 25px;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="detail">
+                <p>关于我的介绍</p>
+                <p>平淡无奇的计算机专业的一员。随着毕业临近，越发觉得时间不够用。相比本科来说，专科还真是时间短暂啊。</p>
+                <p>大学期间尝试了很多技术，用C#完成过图书管理系统的PC版本。用JAVA实现过局域网通讯程序。获得过计算机二级C证书，参加省蓝桥杯JAVA组比赛，得到了一等奖。虽然比起身边同学也算不错了，但是看到真正的大牛才知道自己见识浅薄。</p>
+                <p>这样慢慢的努力，也是没办法的事情。作为一名大学才知道有编程的县城小伙子来说:满打满算也不过才接触计算机两年多，都够不上招聘信息里的三年经验。实在是有些无奈</p>
+                <p>不知道现在醒悟算不算晚，总算是看到了自己能一步一步走下去的路了。个人来说，看到机会就应当不放弃，也明白基础需要非常扎实才能走的远。现在的一遍一遍编写，是为了以后能凭直觉写出好代码。</p>
+                <p>我们的征途是星辰大海。。。</p>
+            </div>
+        </div>
+        <div class="left">
+            <img src="" alt="我能怎么办">
+            <span>我也很绝望</span>
+        </div>
+        <div class="right">
+            <img src="" alt="虽然就我一个人">
+            <img src="" alt="也要装作">
+            <img src="" alt="我有一个团队">
+            <img src="" alt="的样子">
+            <img src="" alt="完毕">
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
